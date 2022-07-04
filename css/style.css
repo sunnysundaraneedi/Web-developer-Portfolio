@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css2?family=Prata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #101011;
+  font-family: "Inter", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  margin: 30px 0;
+  color: #a7a6a6;
+}
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* header .col {
+  flex-basis: 33%;
+} */
+
+.col .logo {
+  font-family: "Prata", serif;
+  font-size: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 10px;
+}
+a {
+  text-decoration: none;
+  color: #a7a6a6;
+}
+
+.header-btn {
+  padding: 15px 30px;
+  background: #ffeb50;
+  font-family: "Prata", serif;
+  color: #000;
+}
+
+/* Main */
+
+.main {
+  padding-top: 30px;
+  color: #fff;
+}
+
+.main .main-title {
+  font-family: "Prata", serif;
+  max-width: 64%;
+  font-weight: normal;
+  font-size: 50px;
+}
+
+.main .main-para {
+  padding-top: 10px;
+  max-width: 54%;
+  font-size: 20px;
+  color: #a7a6a6;
+}
+
+.logos img {
+  margin: 70px 0;
+  /* color: initial; */
+}
+
+/* Projects */
+
+/* .projects col {
+  flex-basis: 48%;
+  margin-right: 10px;
+} */
+
+.projects {
+  margin-bottom: 50px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.projects h3 {
+  font-family: "Prata", serif;
+  color: #fff;
+  font-size: 25px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.projects p {
+  color: #a7a6a6;
+  line-height: 1.5;
+}
+
+/* About */
+.about {
+  padding-top: 50px;
+  background: #333a45;
+  padding-bottom: 50px;
+}
+
+.about h2 {
+  font-family: "Prata", serif;
+  color: #fff;
+  font-size: 25px;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+.about p {
+  color: #a7a6a6;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+/* Contact */
+
+.contact {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.contact h2 {
+  font-family: "Prata", serif;
+  color: #fff;
+  font-size: 25px;
+  font-weight: normal;
+  margin: 10px 0;
+  max-width: 64%;
+}
+
+.contact p {
+  color: #a7a6a6;
+  max-width: 35%;
+  line-height: 1.5;
+  margin: 10px 0;
+  padding-bottom: 25px;
+  font-size: 16px;
+}
+
+/* Footer */
+
+footer {
+  padding-top: 25px;
+  background: #333a45;
+  padding-bottom: 20px;
+}
+
+footer a {
+  display: inline-block;
+  margin: 10px;
+}
+
+footer h4 {
+  font-family: "Prata", serif;
+  color: #fff;
+  font-weight: normal;
+  margin: 10px 0;
+}
+
+/* Main Grid */
+/* .main .grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+} */
+
+/* Ham Menu */
+
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 992px) {
+  nav ul {
+    display: none;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .disappear {
+    display: none;
+  }
+  /* Container */
+  .container {
+    max-width: 90%;
+  }
+  /* Main */
+  .main {
+    text-align: left;
+  }
+  .main .main-title {
+    max-width: 100%;
+  }
+  .main .main-para {
+    max-width: 100%;
+  }
+  /* Main Logos */
+  .main .row {
+    width: 80%;
+    margin: 10px auto;
+  }
+  .main .col {
+    flex-basis: 30%;
+  }
+  .main .col img {
+    padding: 25px;
+    margin: 0;
+  }
+  /* Projects */
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  /* Contact */
+  .contact h2 {
+    width: 70%;
+  }
+  .contact p {
+    max-width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main .main-title {
+    font-size: 25px;
+  }
+  .main .main-para {
+    font-size: 15px;
+  }
+}
